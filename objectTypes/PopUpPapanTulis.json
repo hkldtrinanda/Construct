@@ -1,0 +1,58 @@
+{
+	"name": "PopUpPapanTulis",
+	"plugin-id": "Sprite",
+	"sid": 501227821713910,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1070,
+						"height": 635,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4712874,
+						"collisionPoly": {
+							"points": [
+								0.02149532710280374,
+								0,
+								0.9785046728971962,
+								0,
+								1,
+								0.03464566929133858,
+								1,
+								0.9653543307086614,
+								0.9785046728971962,
+								1,
+								0.02149532710280374,
+								1,
+								0,
+								0.9653543307086614,
+								0,
+								0.03464566929133858
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 636883967240118,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

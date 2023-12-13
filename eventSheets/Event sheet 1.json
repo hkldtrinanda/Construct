@@ -1,0 +1,943 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 848571194333690
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 110375295218360,
+					"parameters": {
+						"animation": "\"Default\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "PopUpPapanTulis",
+					"sid": 142165837601439,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "KAMUBERHASIL",
+					"sid": 539693300803980,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 297926428871666
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-key-released",
+					"objectClass": "Keyboard",
+					"sid": 889300897849510
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Player",
+					"sid": 960044957985903
+				}
+			],
+			"sid": 472209564787843
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 160400287951130,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 490341910148157,
+					"parameters": {
+						"animation": "\"Atas\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 153039860731435
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 309336201360791,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 404220554232895,
+					"parameters": {
+						"animation": "\"Bawah\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 974515255539939
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 833214074992474,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 721528925325562,
+					"parameters": {
+						"animation": "\"Kiri\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 402649688452327
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 104894909667291,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Player",
+					"sid": 680984661865684,
+					"parameters": {
+						"animation": "\"Kanan\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 349365099124880
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 215585009994849,
+					"parameters": {
+						"object": "papanTulis"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PopUpPapanTulis",
+					"sid": 221829087318498,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 287859999677917
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Player",
+					"sid": 285566173045123,
+					"parameters": {
+						"object": "papanTulis"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PopUpPapanTulis",
+					"sid": 140618232963012,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 123659564081063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 969862170829114,
+					"parameters": {
+						"object": "boxBiruMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 594863700812824,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxBiruMuda",
+					"sid": 207973367035758,
+					"parameters": {
+						"angle": "-90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 173325584202881
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 599540823575510,
+					"parameters": {
+						"object": "boxBiruMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 695324370788994,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "boxBiruMuda",
+					"sid": 352666010630781,
+					"parameters": {
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 710162629327218
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 956340210995743,
+					"parameters": {
+						"object": "boxBiruMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 873866614885868,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxBiruMuda",
+					"sid": 957001233039549,
+					"parameters": {
+						"angle": "90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 976666779568374
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 755798760372754,
+					"parameters": {
+						"object": "boxBiruMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 266168691892929,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxBiruMuda",
+					"sid": 575807143999772,
+					"parameters": {
+						"angle": "-180",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 975044775445046
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 347237950003727,
+					"parameters": {
+						"object": "boxBiruTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 391009056088144,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxBiruTua",
+					"sid": 214322848561692,
+					"parameters": {
+						"angle": "-90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 587148029286313
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 396038957939358,
+					"parameters": {
+						"object": "boxBiruTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 790415481200933,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "boxBiruTua",
+					"sid": 843232169544956,
+					"parameters": {
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 311173149272829
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 822646664246969,
+					"parameters": {
+						"object": "boxBiruTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 279457882213916,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxBiruTua",
+					"sid": 657195524578570,
+					"parameters": {
+						"angle": "90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 326348789336552
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 970612598042390,
+					"parameters": {
+						"object": "boxBiruTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 282262097954383,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxBiruTua",
+					"sid": 707887017289274,
+					"parameters": {
+						"angle": "-180",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 742340827593272
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 580253448967909,
+					"parameters": {
+						"object": "boxIjoMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 499243021964748,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxIjoMuda",
+					"sid": 177073016276371,
+					"parameters": {
+						"angle": "-90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 755166583194647
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 225369594826011,
+					"parameters": {
+						"object": "boxIjoMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 773938073471032,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "boxIjoMuda",
+					"sid": 653312890452011,
+					"parameters": {
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 223637935081792
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 653321937904062,
+					"parameters": {
+						"object": "boxIjoMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 368601163647019,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxIjoMuda",
+					"sid": 912741410591063,
+					"parameters": {
+						"angle": "90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 888489351977889
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 477265625565499,
+					"parameters": {
+						"object": "boxIjoMuda"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 730826983360477,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxIjoMuda",
+					"sid": 215499162210457,
+					"parameters": {
+						"angle": "-180",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 310950636669575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 217081339542871,
+					"parameters": {
+						"object": "boxIjoTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 701272043167812,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxIjoTua",
+					"sid": 703061064150584,
+					"parameters": {
+						"angle": "-90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 587255418727258
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 749571374855362,
+					"parameters": {
+						"object": "boxIjoTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 587990441457912,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "boxIjoTua",
+					"sid": 509088902170849,
+					"parameters": {
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 794090894796020
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 929590449236542,
+					"parameters": {
+						"object": "boxIjoTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 404860151853926,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxIjoTua",
+					"sid": 244809940952763,
+					"parameters": {
+						"angle": "90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 881964091067930
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 132619695241335,
+					"parameters": {
+						"object": "boxIjoTua"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 574909045141640,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxIjoTua",
+					"sid": 805655384945018,
+					"parameters": {
+						"angle": "-180",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 325270755118323
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 692383045716326,
+					"parameters": {
+						"object": "boxOren"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 738350054558009,
+					"parameters": {
+						"key": 38
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxOren",
+					"sid": 225132099393490,
+					"parameters": {
+						"angle": "-90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 237117381157716
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 782538164385820,
+					"parameters": {
+						"object": "boxOren"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 181474285016982,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-forward",
+					"objectClass": "boxOren",
+					"sid": 600691169029333,
+					"parameters": {
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 315014390027421
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 479372891021083,
+					"parameters": {
+						"object": "boxOren"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 407060259513040,
+					"parameters": {
+						"key": 40
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxOren",
+					"sid": 684028940243188,
+					"parameters": {
+						"angle": "90",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 814866389790124
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player",
+					"sid": 366471325840092,
+					"parameters": {
+						"object": "boxOren"
+					}
+				},
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 535132807927906,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "boxOren",
+					"sid": 956953621831159,
+					"parameters": {
+						"angle": "-180",
+						"distance": "2"
+					}
+				}
+			],
+			"sid": 947799684702539
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxBiruMuda",
+					"sid": 320806817854277,
+					"parameters": {
+						"object": "triggerBiruMuda"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxBiruTua",
+					"sid": 307198356002946,
+					"parameters": {
+						"object": "triggerBiruTua"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxIjoMuda",
+					"sid": 400880409187176,
+					"parameters": {
+						"object": "triggerIjoMuda"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxIjoTua",
+					"sid": 225722221446802,
+					"parameters": {
+						"object": "triggerIjoTua"
+					}
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "boxOren",
+					"sid": 539844544141916,
+					"parameters": {
+						"object": "triggerOren"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "PintuDestroy",
+					"sid": 658465638938896,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "misi",
+					"sid": 524334367923981,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "KAMUBERHASIL",
+					"sid": 231916537967883,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player",
+					"sid": 158188496356918
+				}
+			],
+			"sid": 145087082196551
+		}
+	],
+	"sid": 566350374690046
+}

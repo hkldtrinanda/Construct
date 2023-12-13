@@ -1,0 +1,50 @@
+{
+	"name": "papanTulis",
+	"plugin-id": "Sprite",
+	"sid": 343858992608205,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 96,
+						"height": 61,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2312790,
+						"collisionPoly": {
+							"points": [
+								0.020833333333333332,
+								0,
+								1,
+								0.03278688524590164,
+								0.9791666666666666,
+								1,
+								0,
+								0.9672131147540983
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 291594704592576,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
